@@ -4,7 +4,7 @@ on:
 
   workflow_dispatch:
     inputs:
-        description: Test Run
+        description: 'SimplyHealth Cypress Tests'
         default: True
         required: false
 
@@ -32,5 +32,5 @@ jobs:
         if: success() || failure()
         uses: actions/upload-artifact@v3
         with:
-          name: Api-Report
+          name: Tests-Report
           path: mochawesome-report
