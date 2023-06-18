@@ -1,12 +1,12 @@
 name: SimplyHealth Cypress Tests
 
 on:
+
   workflow_dispatch:
     inputs:
-      env:
-        description: 'Run SimplyHealth Cypress tests'
-        required: true
-        default: 'main'
+        description: Test Run
+        default: True
+        required: false
 
 jobs:
   cypress-run:
