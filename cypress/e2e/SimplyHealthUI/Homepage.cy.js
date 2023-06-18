@@ -23,7 +23,7 @@ describe('Navigate to 1-2-3 health Plan Page from homepage',() =>
         cy.screenshot()
     })
 
-    it('Navigate to Online GP from Health Plan dropdown menu from homepage',() => {
+    it('Navigate to myAccount from homepage',() => {
         //Click on myAccount Button
         cy.get(homePageLocators.myAccount).click()
         //Verify you are on Consumer Portal Page
