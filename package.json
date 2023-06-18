@@ -1,19 +1,11 @@
 {
   "devDependencies": {
     "cypress": "^12.14.0",
-    "cypress-mochawesome-reporter": "^3.2.3",
-    "mochawesome": "^7.1.3",
-    "mochawesome-merge": "^4.2.2",
-    "mochawesome-report-generator": "^6.2.0"
   },
   "name": "madhurisimplyhealthtest",
   "description": "simplyhealthcodechallenge",
   "version": "1.0.0",
   "main": "cypress.config.js",
-  "scripts": {
-    "cy:run": "cypress run",
-    "cy:open": "cypress open"
-  },
   "dependencies": {
     "ansi-regex": "^5.0.1",
     "ansi-colors": "^4.1.3",
