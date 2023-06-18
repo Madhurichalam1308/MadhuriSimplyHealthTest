@@ -2,6 +2,12 @@ import {homePageLocators, HomePageLocators} from "./HomePageLocators"
 
 describe('Navigate to 1-2-3 health Plan Page from homepage',() =>
 {
+
+    beforeEach(() => {
+
+        cy.launchSimplyHealthPageAndAccceptCookies({cacheSession: false})
+    })
+
     it('Click on Get a health Plan button on the homepage',() => {
         //Click on Get a Health Plan button
         cy.get(homePageLocators.getAHealthPlan).click()
