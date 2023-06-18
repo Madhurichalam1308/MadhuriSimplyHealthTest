@@ -30,6 +30,9 @@ This will run all tests in a headless chrome browser and generate raw json and m
 
 The project is set up to run tests in a Github Actions job on every commit pushed.
 
+**Results**
+This will generate an HTML report in cypress/reports.
+
 **Web Tests - Simply Health UI Scenarios**
 
 1.Given a user navigates to Simply Health homepage
