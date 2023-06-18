@@ -10,6 +10,7 @@ module.exports = defineConfig({
 
   env : {
     createPetUrl : 'https://petstore.swagger.io/v2/pet',
-    getPetUrl: 'https://petstore.swagger.io/v2/pet/1090'
+    getPetUrl : 'https://petstore.swagger.io/v2/pet/1090',
+    deletePetUrl : 'https://petstore.swagger.io/v2/pet/1090'
   }
 });
