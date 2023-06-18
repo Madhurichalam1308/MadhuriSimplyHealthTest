@@ -1,17 +1,14 @@
-name: Simply Health Cypress Tests
-
-on: push
-
+name: Simply health Cypress Tests
+on: [push]
 jobs:
-  cypress-run:
+  Cypress-Test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      # Install NPM dependencies, cache them correctly
-      # and run all Cypress tests
-      - name: Cypress run
-        uses: cypress-io/github-action@v5
+      - name: Checkout GitCode
+        uses: actions/checkout@v2
+
+      - name: Run Cypress Test
+        uses: cypress-io/github-action@v4
         with:
-          build: npm run build
-          start: npm start
+          command: npx cypress run
+          browser: chrome
